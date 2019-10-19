@@ -128,8 +128,8 @@ export class Game {
         }
     }
 
-    /**
-     * 当前方块自由下落
+    /*
+     当前方块自由下落
      */
     private autoDrop() {
         if (this._timer || this._gameStatus !== GameStatus.playing) {
@@ -145,8 +145,8 @@ export class Game {
         }, this._duration);
     }
 
-    /**
-     * 切换方块
+    /*
+    切换方块
      */
     private changeTeris() {
         this._curTeris = this._nextTeris;
@@ -169,10 +169,8 @@ export class Game {
         this._viewer.swtich(this._curTeris);
     }
 
-    /**
-     * 设置中心点坐标，已达到让该方块出现在区域的中上方
-     * @param width 
-     * @param teris 
+    /*
+    设置中心点坐标，已达到让该方块出现在区域的中上方
      */
     private resetCenterPoint(width: number, teris: SquareGroup) {
         const x = Math.ceil(width / 2) - 1;
@@ -186,8 +184,8 @@ export class Game {
         }
     }
 
-    /**
-     * 触底之后的操作
+    /*
+     触底之后的操作
      */
     private hitBottom() {
         //将当前的俄罗斯方块包含的小方块，加入到已存在的方块数组中。

@@ -78,3 +78,6 @@ export function createTeris(center: Point): SquareGroup {
     const shape = shapeGroups[makeRandom(0, shapeGroups.length)];
     return new shape(center, colors[makeRandom(0, colors.length)]);
 }
+function makeRandom(min: number, max: number) {
+    return Math.floor(Math.random()*(max-min) + min)
+}

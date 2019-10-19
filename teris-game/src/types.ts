@@ -31,19 +31,17 @@ export enum GameStatus {
 }
 
 export interface GameViewer {
-    /**
-     * 
-     * @param teris 下一个方块对象
+    /*
+     下一个方块对象
      */
     showNext(teris: SquareGroup): void;
-    /**
-     * 
-     * @param teris 切换的方块对象
+    /*
+    切换的方块对象
      */
     swtich(teris: SquareGroup): void;
 
-    /**
-     * 完成界面的初始化
+    /*
+    完成界面的初始化
      */
     init(game: Game): void;
 
