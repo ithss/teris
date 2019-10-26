@@ -6,7 +6,7 @@ import PageConfig from "./view/PageConfig";
 import { Square } from "./Square";
 
 export class Game {
-    //游戏状态
+    //游戏状态 
     private _gameStatus: GameStatus = GameStatus.init;
 
     public get gameStatus() {
