@@ -37,7 +37,7 @@ class SShape extends SquareGroup{
     rotate() {
         super.rotate();
         this.isClock = !this.isClock;
-    }
+    } 
 }
 
 class IShape extends SquareGroup{
