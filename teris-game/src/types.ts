@@ -6,7 +6,7 @@ export interface Point {
     readonly y: number
 }
 
-export interface Viewer {
+export interface Viewer { 
     // show: () => void
     // remove: () => void
     //显示
